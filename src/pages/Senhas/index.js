@@ -6,7 +6,7 @@ import useStorage from "../../hooks/useStorage";
 import { SenhaItem } from "./senhaComponente/senhas";
 
 
-export function Senhas({senha,}) {
+export function Senhas({senha}) {
     const [listaSenhas, setListaSenhas] = useState([]);
     const focado = useIsFocused();
     const {getItem, removerItem} = useStorage();
